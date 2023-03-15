@@ -159,7 +159,7 @@ public class JunitTestStudent {
         assertTrue(student.equals(result));
         verify(studentRepository).save(any(Student.class));
 
-        //Uodate student hold status
+        //Update student hold status
         student.setStatusCode(0);
         student.setStatus(null);
         when(studentRepository.save(any())).thenReturn(student);
